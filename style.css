@@ -22,7 +22,7 @@ body {
 
     opacity: 1;
     transition: opacity 0.5s ease; /* smooth fade */
-    border: 10px groove #b18b2e; /* Outset border */   
+    
 
 }
 
@@ -54,8 +54,7 @@ body {
     padding: 10px;
     z-index: 10;
     right: 80px;
-    border: 10px groove #bda66c; /* Outset border */   
- 
+   
 }
 
 .image-container2 img {
@@ -101,7 +100,7 @@ body {
     z-index: 10;
     overflow: hidden; /* Make sure the images don't overflow the screen */
     left: -100px;
-    border: 10px groove #b18b2e; /* Outset border */   
+    
 
 }
 
@@ -287,6 +286,3 @@ hr {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Fixed the RGBA value */
 }
 
-nav{
-    border: 10px groove #b18b2e; /* Outset border */   
-}
