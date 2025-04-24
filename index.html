@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<!-- background audio -->
+<body style="background-image: url('BACKGROUND.gif'); ">
+
+    <div class="image-container01">
+        <img src="cat-black.gif" alt="cat">
+    </div>
+    
+    <div class="image-container2">
+        <img src="multo.gif" alt="ghost">
+    </div>
+    
+    <div class="image-container3">
+        <img src="rabbit.gif" alt="rabbit">
+    </div>
+    
+    <!-- Thought Bubbles (fixed at bottom) -->
+    <div class="thought-bubble cat-bubble">Hmm... what's going on?</div>
+    <div class="thought-bubble ghost-bubble">Boo... I'm watching you.</div>
+    <div class="thought-bubble rabbit-bubble">Is it safe to hop out?</div>
+
+   <nav> <!-- image click -->
+    <div class="buttons-container">
+        <div class="button" onclick="showContent('about')">
+            <img src="picbox.jpg" alt="C:\\Users\\jeffu kun\\Desktop\\Dark_Project\\picbox.jpg">
+            <span>About Me</span>
+        </div>
+        <div class="button" onclick="showContent('education')">
+            <img src="picbox.jpg" alt="C:\\Users\\jeffu kun\\Desktop\\Dark_Project\\picbox.jpg">
+            <span>Education</span>
+        </div>
+        <div class="button" onclick="showContent('skills')">
+            <img src="picbox.jpg" alt="C:\\Users\\jeffu kun\\Desktop\\Dark_Project\\picbox.jpg">
+            <span>Skills</span>
+        </div>
+        <div class="button" onclick="showContent('projects')">
+            <img src="picbox.jpg" alt="C:\\Users\\jeffu kun\\Desktop\\Dark_Project\\picbox.jpg">
+            <span>Projects</span>
+        </div>
+        <div class="button" onclick="showContent('contact')">
+            <img src="picbox.jpg" alt="C:\\Users\\jeffu kun\\Desktop\\Dark_Project\\picbox.jpg">
+            <span>Contact</span>
+        </div>
+    </div>
+</nav>
+
+    <!-- text on the box/ Picture -->
+    <div id="about" class="content-container">
+        <img id="about-image" src="me.jpg" alt="John Carlo D. Olesco">
+        <hr>
+        <p>Hi, I'm John Carlo D. Olesco, a 24-year-old student currently studying at National Teachers College. I am passionate about education, leadership, and innovation. I enjoy learning new skills and taking on challenges that push me to grow and improve.</p>
+    </div>
+
+    <div id="education" class="content-container">
+        <p><strong>Education:</strong></p>
+        <hr>
+        <p>National Teachers College – Current Student</p>
+        <p>St. Augustine School of Nursing, Mandaluyong City – Senior High School Graduate</p>
+    </div>
+
+    <div id="skills" class="content-container">
+        <p><strong>Skills:</strong></p>
+        <hr></hr>
+        <p>Video Editing</p>
+        <p>Strong leadership and decision-making abilities</p>
+        <p>Problem-solving under pressure</p>
+        <p>Effective communication and teamwork</p>
+        <p>Creativity in project development</p>
+        <hr></hr>
+        <p>HTML/CSS/JAVA SCRIPT</p>
+    </div>
+
+    <div id="projects" class="content-container">
+        <p><strong>Projects:</strong></p>
+        <hr></hr>
+        <p>Roblox Horror Game streaming/Video editing – Working on adrenaline-based dilemmas and high-pressure decision-making mechanics</p>
+        <p>Business Presentation – Preparing a detailed presentation on franchisor and franchisee business plans</p> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TDdiY_1ytwU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <hr></hr>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LLxTpN5Ktm4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div id="contact" class="content-container">
+        <p><strong>Contact:</strong></p>
+        <hr></hr>
+        <p>📧 Email: <a>olescojohn@gmail.com</a></p>
+        <a href="mailto:423002140@ntc.edu.ph">Send Email: 423002140@ntc.edu.ph</a>
+        <br>
+        <a href="https://www.facebook.com/olescojohns1" target="_blank">Visit facebook Profile - olescojohns1</a>
+
+    </div>
+     
+    <audio id="background-audio" loop>
+        <source src="chill_music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+ 
+<!-- Audio play/Stop -->
+    <button onclick="toggleAudio()">Play</button>
+    <script>
+        const audio = document.getElementById("background-audio");
+        let isPlaying = false;
+        
+        function toggleAudio() {
+            if (isPlaying) {
+                audio.pause();
+                event.target.textContent = "Play";
+            } else {
+                audio.play();
+                event.target.textContent = "Pause";
+            }
+            isPlaying = !isPlaying;
+        }
+        </script>
+
+</body>
+</html>
